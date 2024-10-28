@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #34db5e;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .navbar {
+            background-color: var(--primary-color) !important;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .navbar-brand, .nav-link {
+            color: white !important;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: var(--secondary-color) !important;
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            min-height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .profile-section {
+            padding: 4rem 0;
+        }
+
+        .profile-img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .intro-text {
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .project-card {
+            transition: transform 0.3s ease;
+            margin-bottom: 2rem;
+            border: none;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .contact-icon {
+            font-size: 2rem;
+            color: var(--primary-color);
+            transition: color 0.3s ease;
+        }
+
+        .contact-icon:hover {
+            color: var(--secondary-color);
+        }
+
+        .footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-section d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 intro-text">
+                    <h1 class="display-4 fw-bold mb-4">Welcome to My Portfolio</h1>
+                    <p class="lead mb-4">Hello my name is Hiskia Prawira Tarigan 
+                        <br>I am a student at the College of University of North Sumatera.</br>
+                        <br>Driven by a passion for creative innovation, I love turning ideas into reality with fresh and impactful solutions.</br>
+                        My focus is on solving problems in unique ways, and I’m always excited about pushing creative boundaries.</br>
+
+                       <br>Take a look at my work, and don’t hesitate to reach out if you'd like to collaborate or chat about new ideas!
+                    </p>
+                    <a href="#projects" class="btn btn-light btn-lg">View My Work</a>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <img src="fotosaya.JPG" alt="Profile" class="profile-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">My Projects</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card project-card">
+                        <img src="screenshot6.webp" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Video Editor</h5>
+                            <p class="card-text">I am a video editor with a passion for crafting engaging visual stories. With experience in editing videos for various purposes, from social media content to commercial projects, I focus on detail, rhythm, and creativity in every piece of work. My goal is to bring clients' visions to life through effective and professional editing.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card project-card">
+                        <img src="cara-menjadi-trader-sukses.jpg" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Trader</h5>
+                            <p class="card-text">I am trader passionate about innovative solutions. I thrive on bringing creative ideas to life and solving market challenges with a unique approach    .</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card project-card">
+                        <img src="download (1).jpeg" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Gamer</h5>
+                            <p class="card-text">im an avid gamer with a passion for Mobile Legends, PUBG, and eFootball. I love exploring new strategies and competing with others.
+                                I focus on teamwork and strategy, always striving to improve my gameplay and achieve victory.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <section id="contact" class="py-5 bg-black">
+        <div class="container text-center">
+            <h2 class="mb-5">Hubungi <span class="accent-text">Saya</span></h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <p class="mb-4">Tertarik untuk mengabadikan momen spesial Anda? Mari diskusikan konsep dan ide Anda.</p>
+                    <div class="d-flex justify-content-center align-items-center gap-5">
+                        <a href="https://wa.me/6283892002793" class="text-decoration-none text-center">
+                            <i class="fab fa-whatsapp contact-icon"></i>
+                            <p class="mt-2">Hubungi via WhatsApp</p>
+                        </a>
+                        <a href="mailto:hizkiatarigan651@gmail.com" class="text-decoration-none text-center">
+                            <i class="fas fa-envelope contact-icon"></i>
+                            <p class="mt-2">hizkiatarigan651@gmail.com</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer text-center">
+        <div class="container">
+            <p class="mb-0">&copy; 2024 Tugas Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 50) {
+                document.querySelector('.navbar').style.backgroundColor = '#1a252f !important';
+            } else {
+                document.querySelector('.navbar').style.backgroundColor = 'var(--primary-color) !important';
+            }
+        });
+    </script>
+</body>
+</html>
